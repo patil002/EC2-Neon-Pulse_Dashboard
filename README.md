@@ -17,13 +17,13 @@ Before you start, ensure you have the following installed on your system:
 ## Installation & Usage
 ### 1. Pull the Docker Image
 ```sh
-docker pull <your-dockerhub-username>/ec2-neon-pulse:latest
+docker pull sohelqt8797/ec2-neon-pulse:latest
 ```
 
 ### 2. Run the Container
 #### Without Redis (Basic Mode):
 ```sh
-docker run -d -p 5001:5001 --name neon-pulse <your-dockerhub-username>/ec2-neon-pulse:latest
+docker run -d -p 5001:5001 --name neon-pulse sohelqt8797/ec2-neon-pulse:latest
 ```
 
 #### With Redis (Recommended for better performance tracking):
@@ -33,7 +33,7 @@ docker network create neon-net
 docker run -d --name redis-server --network=neon-net redis:alpine
 
 docker run -d -p 5001:5001 --name neon-pulse --network=neon-net \
-  -e REDIS_HOST=redis-server <your-dockerhub-username>/ec2-neon-pulse:latest
+  -e REDIS_HOST=redis-server sohelqt8797/ec2-neon-pulse:latest
 ```
 
 ### 3. Access the Dashboard
