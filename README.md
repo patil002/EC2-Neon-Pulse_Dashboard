@@ -2,6 +2,8 @@
 
 EC2 Neon Pulse is a lightweight, visually stunning monitoring dashboard for your EC2 instance, providing real-time insights into system performance. With a cyberpunk aesthetic, this dashboard offers CPU, memory, disk usage, network activity, and process count in a sleek, easy-to-use interface.
 
+![Dashboard](images/dashboard.png "EC2 Dashboard")
+
 ## Features
 - **Real-time monitoring**: Track CPU, memory, disk, network usage, and running processes.
 - **Redis-backed data storage**: Stores recent metrics for fast retrieval.
